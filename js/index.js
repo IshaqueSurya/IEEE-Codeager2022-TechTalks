@@ -6,12 +6,3 @@ togglebutton.addEventListener("click", function () {
     togglebutton.classList.toggle("is-active");
     navlinks.classList.toggle("is-active");
 });
-
-const img = document.querySelectorAll("img");
-const icons = document.querySelector(".icons");
-for (var i = 0; i < img.length; i++) {
-    img[i].onclick = function () {
-        this.classList.toggle("active");
-        icons.classList.toggle("active");
-    }
-}
