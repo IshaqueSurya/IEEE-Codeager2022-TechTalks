@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tech Talks</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <div class="navbarmenu">
+            <a href="https://ieee.vit.edu.in" target="_new"><img src="images/logo.png" alt="" width="170px"></a>
+            <div class="navlinks-desktop">
+
+                <ul class="">
+                    <li class="link"><a href="#">Home</a></li>
+                    <li class="link"><a href="#">IRIS</a></li>
+                    <li class="link"><a href="#">VOYAGER</a></li>
+                    <li class="link"><a href="#">About Us</a></li>
+                    <li class="link"><a href="#">The Team</a></li>
+                    <li class="link"><a href="#">Our Blog</a></li>        
+                </ul>
+                
+            </div>
+            <a href="#" class="togglebutton" id="togglebutton">
+                <div class="bar" id="bar1"></div>
+                <div class="bar" id="bar2"></div>
+                <div class="bar" id="bar3"></div>
+            </a>
+        </div>
+        <ul class="navlinks">
+            <li class="link"><a href="#">Home</a></li>
+            <li class="link"><a href="#">IRIS</a></li>
+            <li class="link"><a href="#">VOYAGER</a></li>
+            <li class="link"><a href="#">About Us</a></li>
+            <li class="link"><a href="#">The Team</a></li>
+            <li class="link"><a href="#">Our Blog</a></li>
+        </ul>
+
+    </div>
+    <h1 id = "page-title">VOYAGER TECH TALKS</h1>
+    
+    <div class="speaker-card-container">
+
+        <div class="speaker-card">
+            <div class="speaker-wrapper">
+                <a href="#">
+                    <img src="images/speaker1.jpg" alt="">
+                </a>
+                <div class="speaker-name">
+                    Hitesh Hinduja
+                </div>
+                <div class="speaker-designation">
+                    Datascientist at Ola Electric
+                </div>
+            </div>
+            <div class="event-topic">
+                <p>
+                    Topic: ML Interpretation
+                </p>
+                <div class="buttons">
+                    <div class="register-btn">
+                        <button>Register Here</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="icons">
+                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            </div>
+        </div>
+
+        <div class="speaker-card">
+            <div class="speaker-wrapper">
+                <a href="#">
+                    <img src="images/speaker2.jpeg" alt="">
+                </a>
+                <div class="speaker-name">
+                    Rahul Sasi
+                </div>
+                <div class="speaker-designation">
+                    Founder of CloudSEK
+                </div>
+            </div>
+            <div class="event-topic">
+                <p>
+                    Topic: Cyber Security
+                </p>
+                <div class="buttons">
+                    <div class="register-btn">
+                        <button>Register Here</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="icons">
+                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h3 class="text">Connect With Us</h3>
+        <div class="links">
+          <a href="https://twitter.com/vidyalankarieee?lang=en" target="_new">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/IEEEVIT1/" target="_new">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://www.instagram.com/ieeevit/" target="_new">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <br />
+  
+        <p class="text">© 2021-22 Copyright:</p>
+        <p class="text">IEEE-VIT STUDENT BRANCH</p>
+        <span class="text">CODE OF CONDUCT</span>
+      </div>
+
+    <script src="js/index.js"></script>
+    <script>
+        const img = document.querySelectorAll("img");
+        const icons = document.querySelector(".icons");
+        for (var i = 0; i < img.length; i++) {
+            img[i].onclick = function () {
+                this.classList.toggle("active");
+                icons.classList.toggle("active");
+            }
+        }
+        // let cards = document.getElementsByClassName("speaker-card");
+        // for (let i = 0; i < cards.length; i++) {
+        //     cards[i].addEventListener("mouseover", () => {
+        //         cards[i].scrollIntoView(false);
+
+        //     });
+        // }
+
+    </script>
+</body>
+
+</html>
